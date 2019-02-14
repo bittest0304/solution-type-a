@@ -21,6 +21,22 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		
+		int r; 
+		int cnt = 0;
+		
+		while(number > 0 ) {
+			r = number % 10;
+			if(r == 3) {
+				cnt++;				
+			}else if(r == 6) {
+				cnt++;				
+			}else if(r == 9) {
+				cnt++;				
+			}
+			number = number / 10;			
+		}
+		
+		return cnt;
 	}
 }
